@@ -52,6 +52,12 @@ namespace RomanNumeralsKataTDDExercise.Tests
         {
             numberToRomanConverter.NumberToRoman(6).Should().Be("VI");
         }
-       
+
+        [Test]
+        public void Testing_To_Convert_Number_Seven_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(7).Should().Be("VII");
+        }
+
     }
 }
