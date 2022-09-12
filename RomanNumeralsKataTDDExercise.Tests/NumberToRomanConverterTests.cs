@@ -82,5 +82,23 @@ namespace RomanNumeralsKataTDDExercise.Tests
         {
             numberToRomanConverter.NumberToRoman(11).Should().Be("XI");
         }
+
+        [Test]
+        public void Testing_To_Convert_Number_Fourteen_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(14).Should().Be("XIV");
+        }
+
+        [Test]
+        public void Testing_To_Convert_Number_Fifteen_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(15).Should().Be("XV");
+        }
+
+        [Test]
+        public void Testing_To_Convert_Number_Sixteen_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(16).Should().Be("XVI");
+        }
     }
 }
