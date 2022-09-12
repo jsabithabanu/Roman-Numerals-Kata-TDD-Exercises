@@ -120,9 +120,16 @@ namespace RomanNumeralsKataTDDExercise.Tests
         }
 
         [Test]
-        public void Testing_To_Convert_Number_Fourty_Nine_To_Roman_Numeral()
+        public void Testing_To_Convert_Number_Thirty_Nine_To_Roman_Numeral()
         {
             numberToRomanConverter.NumberToRoman(39).Should().Be("XXXIX");
         }
+
+        [Test]
+        public void Testing_To_Convert_Number_Fourty_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(49).Should().Be("XLIX");
+        }
+       
     }
 }
