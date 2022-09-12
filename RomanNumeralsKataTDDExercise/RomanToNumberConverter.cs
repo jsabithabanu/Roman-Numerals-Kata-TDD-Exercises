@@ -8,15 +8,18 @@ namespace RomanNumeralsKataTDDExercise
 {
     public class RomanNumeralToNumberConverter
     {
-        //public string NumberToRoman(int number)
-        //{
-        //    //Dictionary to store Roman numerals and Integer number mapping
-        //    var romanNumbersDictionary = new Dictionary<string, int>
-        //    {
-        //        {"I", 1}
-        //    };
-        //    if()
-        //    return "";
-        //}
+        public int RomanToNumber(string numeral)
+        { 
+            if(!string.IsNullOrEmpty(numeral))
+            {
+                if (numeral == "I")
+                    return 1;
+                else 
+                    return -1;
+            }
+            else
+                return -1;
+
+        }
     }
 }

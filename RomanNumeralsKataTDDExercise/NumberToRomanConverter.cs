@@ -30,6 +30,8 @@ namespace RomanNumeralsKataTDDExercise
 
             string RomanNumeral = "";
             
+            //This checks starting from larger number in the dictionary
+            //and finds the Roman numerals
             foreach (var item in RomanToNumberMap.Reverse())
             {
                 if (number <= 0) break;
