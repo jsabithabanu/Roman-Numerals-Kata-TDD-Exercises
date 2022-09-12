@@ -12,7 +12,7 @@ namespace RomanNumeralsKataTDDExercise
         {
             string RomanNumeral = "";
 
-            if (number > 0 && number < 3)
+            if (number > 0 && number < 4)
             {
                 for (int i = 0; i < number; i++)
                     RomanNumeral += "I";
