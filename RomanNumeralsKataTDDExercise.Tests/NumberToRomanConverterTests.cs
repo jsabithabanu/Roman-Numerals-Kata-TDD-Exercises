@@ -22,5 +22,11 @@ namespace RomanNumeralsKataTDDExercise.Tests
         {
             numberToRomanConverter.NumberToRoman(1).Should().Be("I");
         }
+
+        [Test]
+        public void Testing_To_Convert_Number_Two_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(2).Should().Be("II");
+        }
     }
 }

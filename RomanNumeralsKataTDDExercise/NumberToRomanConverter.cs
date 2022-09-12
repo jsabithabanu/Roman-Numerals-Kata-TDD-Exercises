@@ -11,8 +11,12 @@ namespace RomanNumeralsKataTDDExercise
         public string NumberToRoman(int number)
         {
             string RomanNumeral = "";
-            if (number == 1)
-                RomanNumeral = "I";
+
+            if (number > 0 && number < 3)
+            {
+                for (int i = 0; i < number; i++)
+                    RomanNumeral += "I";
+            }
             return RomanNumeral;
         }
     }
