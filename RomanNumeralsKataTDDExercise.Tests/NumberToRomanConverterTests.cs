@@ -130,6 +130,17 @@ namespace RomanNumeralsKataTDDExercise.Tests
         {
             numberToRomanConverter.NumberToRoman(49).Should().Be("XLIX");
         }
-       
+
+        [Test]
+        public void Testing_To_Convert_Number_Upto_Three_Thousand_Nine_Hundred_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(3900).Should().Be("MMMCM");
+        }
+
+        [Test]
+        public void Testing_To_Convert_Number_Upto_Four_Thousand_Nine_Hundred_Ninety_Nine_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(4999).Should().Be("MMMMCMXCIX");
+        }
     }
 }
