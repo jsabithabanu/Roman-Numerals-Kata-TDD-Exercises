@@ -9,13 +9,16 @@ namespace RomanNumeralsKataTDDExercise
     public class RomanNumeralToNumberConverter
     {
         public int RomanToNumber(string numeral)
-        { 
+        {
+            int number = 0;
             if(!string.IsNullOrEmpty(numeral))
-            {
-                if (numeral == "I")
-                    return 1;
-                else 
-                    return -1;
+            {                
+                for (int i=0; i < numeral.Length; i++)
+                {
+                    if (numeral[i].ToString().Equals("I"))
+                        number++;
+                }
+                return number;
             }
             else
                 return -1;
