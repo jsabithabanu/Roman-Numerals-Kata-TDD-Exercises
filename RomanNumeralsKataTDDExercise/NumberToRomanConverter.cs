@@ -10,16 +10,24 @@ namespace RomanNumeralsKataTDDExercise
     {
         public string NumberToRoman(int number)
         {
-            string RomanNumeral = "";
+            //Dictionary to store Roman numerals and Integer number mapping
+            var RomanToNumberMap = new Dictionary<string, int>
+            {
+                {"I", 1},
+                {"IV", 4},
+                {"V", 5}
+            };
 
-            if (number > 0 && number < 4)
+            string RomanNumeral = "";
+            
+            foreach (var item in RomanToNumberMap.Reverse())
             {
-                for (int i = 0; i < number; i++)
-                    RomanNumeral += "I";
-            }
-            else if (number == 4)
-            {
-                RomanNumeral = "IV";
+                if (number <= 0) break;
+                while (number >= item.Value)
+                {
+                    RomanNumeral += item.Key;
+                    number -= item.Value;
+                }
             }
             return RomanNumeral;
         }
