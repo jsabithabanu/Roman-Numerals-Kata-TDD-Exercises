@@ -65,5 +65,10 @@ namespace RomanNumeralsKataTDDExercise.Tests
             numberToRomanConverter.NumberToRoman(8).Should().Be("VIII");
         }
 
+        [Test]
+        public void Testing_To_Convert_Number_Nine_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(9).Should().Be("IX");
+        }
     }
 }
