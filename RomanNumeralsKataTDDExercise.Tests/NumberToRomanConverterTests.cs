@@ -70,5 +70,11 @@ namespace RomanNumeralsKataTDDExercise.Tests
         {
             numberToRomanConverter.NumberToRoman(9).Should().Be("IX");
         }
+
+        [Test]
+        public void Testing_To_Convert_Number_Ten_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(10).Should().Be("X");
+        }
     }
 }
