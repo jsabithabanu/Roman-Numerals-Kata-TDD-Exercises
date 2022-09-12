@@ -59,5 +59,11 @@ namespace RomanNumeralsKataTDDExercise.Tests
             numberToRomanConverter.NumberToRoman(7).Should().Be("VII");
         }
 
+        [Test]
+        public void Testing_To_Convert_Number_Eight_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(8).Should().Be("VIII");
+        }
+
     }
 }
