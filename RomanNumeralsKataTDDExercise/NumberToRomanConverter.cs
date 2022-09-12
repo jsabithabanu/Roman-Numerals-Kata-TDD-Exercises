@@ -17,6 +17,10 @@ namespace RomanNumeralsKataTDDExercise
                 for (int i = 0; i < number; i++)
                     RomanNumeral += "I";
             }
+            else if (number == 4)
+            {
+                RomanNumeral = "IV";
+            }
             return RomanNumeral;
         }
     }

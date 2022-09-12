@@ -34,5 +34,11 @@ namespace RomanNumeralsKataTDDExercise.Tests
         {
             numberToRomanConverter.NumberToRoman(3).Should().Be("III");
         }
+
+        [Test]
+        public void Testing_To_Convert_Number_Four_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(4).Should().Be("IV");
+        }
     }
 }
