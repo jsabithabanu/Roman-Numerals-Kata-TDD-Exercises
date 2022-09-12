@@ -100,5 +100,29 @@ namespace RomanNumeralsKataTDDExercise.Tests
         {
             numberToRomanConverter.NumberToRoman(16).Should().Be("XVI");
         }
+
+        [Test]
+        public void Testing_To_Convert_Number_Nineteen_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(19).Should().Be("XIX");
+        }
+
+        [Test]
+        public void Testing_To_Convert_Number_Twenty_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(20).Should().Be("XX");
+        }
+
+        [Test]
+        public void Testing_To_Convert_Number_Thirty_Four_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(34).Should().Be("XXXIV");
+        }
+
+        [Test]
+        public void Testing_To_Convert_Number_Fourty_Nine_To_Roman_Numeral()
+        {
+            numberToRomanConverter.NumberToRoman(39).Should().Be("XXXIX");
+        }
     }
 }
