@@ -30,5 +30,11 @@ namespace RomanNumeralsKataTDDExercise.Tests
         {
             romanToNumberConverter.RomanToNumber("II").Should().Be(2);
         }
+
+        [Test]
+        public void Testing_To_Convert_Roman_Numeral_To_Number_Three()
+        {
+            romanToNumberConverter.RomanToNumber("III").Should().Be(3);
+        }
     }
 }
